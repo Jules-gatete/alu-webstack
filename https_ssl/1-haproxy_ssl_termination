@@ -43,7 +43,7 @@ frontend www-https
 backend web-backend
     redirect scheme https unless { ssl_fc }
     balance roundrobin
-    server 5857-web-0235.172.228.188:80 check
+    server 5857-web-02 35.172.228.188:80 check
     server 5857-web-01 34.230.10.170:80 check
 backend letsencrypt-backend
    server letsencrypt 127.0.0.1:54321
